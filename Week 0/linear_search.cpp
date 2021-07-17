@@ -1,18 +1,21 @@
 #include <bits/stdc++.h>
+#include <fstream>
 using namespace std;
 int main()
 {
+    ifstream in("file.txt");
+    ofstream out("output.txt");
     int n,t,x,count,flag;
-    cin >> n;
+    in >> n;
     int arr[n];
     for (int i = 0; i < n; i++)
     {
-        cin >> arr[i];
+        in >> arr[i];
     }
-    cin >> t;
+    in >> t;
     while (t--)
     {
-        cin >> x;
+        in >> x;
         count = flag = 0;
         for (int i = 0; i < n; i++)
         {
@@ -24,9 +27,11 @@ int main()
             }
         }
         if(flag)
-            cout << "Found after " << count << " comparisons" << endl;
+            out << "Found after " << count << " comparisons" << endl;
         else
-            cout << "Not Found" << endl;
+            out << "Not Found" << endl;
     }
+    in.close();
+    out.close();
     return 0;
 }
