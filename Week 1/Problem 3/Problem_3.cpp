@@ -18,20 +18,27 @@ int main()
         }
         in >> x;
         count = 0;
-        int l=0,u=n,m = (l+u)/2;
-        while (l<u)
+        int l = 0,u = 2;
+        while (u < n)
         {
             count++;
-            if (arr[m] == x)
+            if(arr[l] <= x && x < arr[u])
+                goto found;
+            l = u;
+            u *= 2;
+        }
+        count++;
+        if(arr[l] <= x && x <= arr[n-1])
+            goto found;
+        out << "Not Present " << count << endl;
+        continue;
+        found : for(int i = l; i < u && i < n; i++)
+        {
+            if(arr[i] == x)
             {
                 out << "Present " << count << endl;
                 goto outer;
             }
-            else if (arr[m]<x)
-                l = m+1;
-            else
-                u = m;
-            m = (l+u)/2;
         }
         out << "Not Present " << count << endl;
         outer: continue;
