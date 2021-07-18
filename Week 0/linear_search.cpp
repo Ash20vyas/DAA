@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-    ifstream in("file.txt");
+    ifstream in("input.txt");
     ofstream out("output.txt");
     int n,t,x,count,flag;
     in >> n;

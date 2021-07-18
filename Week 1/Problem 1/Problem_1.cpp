@@ -1,30 +1,33 @@
 #include <bits/stdc++.h>
+#include <fstream>
 using namespace std;
 int main()
 {
+    ifstream in("input.txt");
+    ofstream out("output.txt");
     int t;
-    cin >> t;
+    in >> t;
     while (t--)
     {
         int n,x,count;
-        cin >> n;
+        in >> n;
         int arr[n];
         for (int i = 0; i < n; i++)
         {
-            cin >> arr[i];
+            in >> arr[i];
         }
-        cin >> x;
+        in >> x;
         count = 0;
         for (int i = 0; i < n; i++)
         {
             count++;
             if(x == arr[i])
             {
-                cout << "Present " << count << endl;
+                out << "Present " << count << endl;
                 goto outer;
             }
         }
-        cout << "Not Present " << count << endl;
+        out << "Not Present " << count << endl;
         outer: continue;
     }
     return 0;
