@@ -24,16 +24,10 @@ int main()
             if (arr[m] == key)
             {
                 count++;
-                for (int i = m + 1; i < n; i++)
-                {
-                    if (arr[i] == key)
-                        count++;
-                }
-                for (int i = m - 1; i >= 0; i--)
-                {
-                    if (arr[i] == key)
-                        count++;
-                }
+                for (int i = m + 1; i < n && arr[i] == key; i++)
+                    count++;
+                for (int i = m - 1; i >= 0 && arr[i] == key; i--)
+                    count++;
                 out << key << " - " << count << endl;
                 goto outer;
             }
