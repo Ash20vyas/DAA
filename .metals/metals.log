@@ -1,0 +1,9 @@
+[0m2021.09.26 14:23:09 INFO  Started: Metals version 0.10.7 in workspace 'D:\Workfiles\Github\DAA' for client Visual Studio Code 1.60.1.[0m
+[0m2021.09.26 14:23:11 INFO  time: initialize in 2.02s[0m
+[0m2021.09.26 14:23:12 WARN  Build server is not auto-connectable.[0m
+[0m2021.09.26 14:23:12 WARN  no build tool detected in workspace 'D:\Workfiles\Github\DAA'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.09.29 10:17:12 INFO  Started: Metals version 0.10.7 in workspace 'D:\Workfiles\Github\DAA' for client Visual Studio Code 1.60.1.[0m
+[0m2021.09.29 10:17:15 INFO  time: initialize in 3.1s[0m
+[0m2021.09.29 10:17:20 WARN  Build server is not auto-connectable.[0m
+[0m2021.09.29 10:17:20 WARN  no build tool detected in workspace 'D:\Workfiles\Github\DAA'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.09.29 10:22:18 INFO  shutting down Metals[0m
